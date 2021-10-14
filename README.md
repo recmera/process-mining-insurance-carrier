@@ -1,4 +1,4 @@
-# process-mining
+# Minería de Procesos para Aseguradora
 
 ### Entorno
 
