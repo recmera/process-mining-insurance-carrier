@@ -21,25 +21,3 @@ Algunas medidas de éxito del proceso son las siguientes:
 4. Analizar el log de eventos. Para ello, se puede escoger algunas preguntas (no menos de 3), del listado que se entrega en el anexo, e intentar responderlas mediante las herramientas de análisis. Es posible también proponer otras preguntas que pudieran ser de interés para ayudar a entender el proceso. Se sugiere que en el análisis del log se tengan en cuenta las etapas identificadas en la pregunta 2, de manera que el análisis sea más focalizado. Más importante que la cantidad de preguntas abordadas, es que el trabajo analice el log desde diferentes perspectivas y utilizando diferentes técnicas. 
 5. A partir de los análisis realizados, propongan algunas mejoras al proceso (mínimo 2). Estas mejoras podrían tener por objetivo simplificar el proceso, reducir el tiempo total o el de alguna actividad, reducir reprocesos, o cualquier otro objetivo que permita mejorar el proceso.
 
-### Entorno
-
-1. Crear y activar un entorno con conda
-
-``` shell
-    $ conda create --name sgt
-    $ conda activate sgt
-  
-```
-  
-2. Instalar Jupyter Notebook en el entorno de conda  
-``` shell
-  $ conda install -c conda-forge notebook
-```
-  
-3. Instalar R dentro de Jupyter Notebook
-
-``` shell
-
-  $ conda install -c r r-essentials
-  
-```
