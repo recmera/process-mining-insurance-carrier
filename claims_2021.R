@@ -15,10 +15,10 @@ read.csv2("log_claims_2021.csv") %>%
                          resource_id = "resource"
   ) -> claims2021
 
-# Numero de columnas dataset 
+# Numero de filas dataset 
 nrow(claims2021)
 
-# Descripción dataset 
+# DescripciÃ³n dataset 
 summary(claims2021)
 
 # Actividad inicial
@@ -36,13 +36,13 @@ claims2021 %>% activities
 # Recursos
 claims2021 %>% resources
 
-# Estadísticos de tiempo desde comienzo hasta fin (días)
+# EstadÃ­sticos de tiempo desde comienzo hasta fin (dÃ­as)
 claims2021  %>% throughput_time()
 
 # Todas las secuencias de actividades (trazas)
 claims2021 %>% trace_explorer(coverage = 1)
 
-# Process map del proceso de investigación
+# Process map del proceso de investigaciÃ³n
 claims2021 %>%
   filter_activity("File Claim", reverse= TRUE) %>%
   filter_activity("Check Contract", reverse= TRUE) %>%
@@ -65,7 +65,7 @@ claims2021 %>%
   filter_activity("Pay Back Decision", reverse= TRUE) %>%
   process_map() 
   
-# Duración actividades
+# DuraciÃ³n actividades
 claims2021 %>%
   processing_time("activity") %>%
   plot
